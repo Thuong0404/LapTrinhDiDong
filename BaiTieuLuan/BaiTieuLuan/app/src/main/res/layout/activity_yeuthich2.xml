@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_marginHorizontal="14dp"
+android:weightSum="10"
+android:orientation="vertical"
+
+    >
+<TextView
+    android:id="@+id/dsbh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Danh sách bài hát yêu thich"
+    android:textSize="25dp"
+    android:gravity="center"
+    android:textColor="@color/teal_700"
+    android:textStyle="bold">
+
+
+</TextView>
+
+<ListView
+    android:id="@+id/listyt"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="7"></ListView>
+
+<TextView
+    android:id="@+id/dagphatyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Đang phát:"
+    android:padding="10px"
+    android:textColor="@color/teal_700"
+    android:textSize="25dp"
+    tools:ignore="HardcodeText" />
+<LinearLayout
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="0.5">
+    <TextView
+        android:id="@+id/timeplayyt"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        tools:ignore="NestedWeights"
+        android:gravity="start" />
+    <TextView
+        android:id="@+id/timeoutyt"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textAlignment="textEnd"
+
+        android:gravity="end"></TextView>
+
+
+</LinearLayout>
+<SeekBar
+    android:id="@+id/seebaryt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"/>
+<LinearLayout
+    android:layout_marginLeft="90dp"
+    android:layout_marginRight="90dp"
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_weight="0.5"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    >
+    <ImageButton
+        android:id="@+id/luiyt"
+        android:layout_weight="1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@null"
+        tools:ignore="NestedWeights"
+        android:src="@drawable/rewind"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/stopyt"
+        android:layout_weight="1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@null"
+        tools:ignore="NestedWeights"
+        android:src="@drawable/pause"></ImageButton>
+    <ImageButton
+        android:id="@+id/nextyt"
+        android:layout_weight="1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@null"
+        tools:ignore="NestedWeights"
+        android:src="@drawable/next"></ImageButton>
+</LinearLayout>
+
+</LinearLayout>

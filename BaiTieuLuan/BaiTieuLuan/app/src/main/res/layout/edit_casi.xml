@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="14dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin ca sĩ"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:textColor="@color/teal_700"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên ca sĩ: "
+            android:textColor="@color/teal_700"
+            android:textSize="20dp">
+
+        </TextView>
+        <EditText android:id="@+id/edtten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hình ảnh:"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/teal_700">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/imgcasi"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+           android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp">
+
+
+        </ImageView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+    android:layout_gravity="center">
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhập"
+        android:backgroundTint="@color/teal_700"
+        ></Button>
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+      android:layout_marginStart="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginLeft="15dp"></Button>
+</LinearLayout>
+</LinearLayout>
